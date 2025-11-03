@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design in Balance OÜ</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Helvetica Neue', sans-serif;
+            background-color: #f8f8f8;
+            color: #111;
+        }
+
+        header {
+            background-color: #c00;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        nav a:hover {
+            color: #00b3ff;
+        }
+
+        section {
+            padding: 120px 80px;
+            max-width: 1200px;
+            margin: auto;
+            font-size: 22px;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0,0,60,0.7), rgba(100,0,0,0.7)), url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d') center/cover no-repeat;
+            color: white;
+            text-align: center;
+            padding: 250px 20px;
+        }
+
+        .hero h1 {
+            font-size: 64px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .hero p {
+            font-size: 26px;
+            max-width: 800px;
+            margin: auto;
+            line-height: 1.6;
+        }
+
+        .about {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+        }
+
+        .about img {
+            width: 45%;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #c00;
+            text-transform: uppercase;
+            font-size: 40px;
+            margin-bottom: 30px;
+        }
+
+        .services, .advantages, .process {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .service, .advantage, .step {
+            background-color: #fff;
+            border-left: 8px solid #00b3ff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .service h3, .advantage h3, .step h3 {
+            color: #c00;
+            margin-bottom: 15px;
+        }
+
+        .contact {
+            background: linear-gradient(to right, #c00, #002b80);
+            color: white;
+            text-align: left;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 100px 80px;
+        }
+
+        .contact-text {
+            max-width: 50%;
+            font-size: 24px;
+        }
+
+        .contact-form {
+            background-color: rgba(255,255,255,0.1);
+            padding: 40px;
+            border-radius: 10px;
+            width: 40%;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+
+        .contact-form button {
+            background-color: #00b3ff;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #002b80;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="#home">Avaleht</a>
+        <a href="#about">Meist</a>
+        <a href="#services">Teenused</a>
+        <a href="#advantages">Eelised</a>
+        <a href="#process">Kuidas töötame</a>
+        <a href="#contact">Kontakt</a>
+    </nav>
+</header>
+
+<section id="home" class="hero">
+    <h1>Design in Balance OÜ</h1>
+    <p>Loome strateegilise tasakaalu ettevõtte arengu, turunduse ja brändi identiteedi vahel. Aitame ettevõtetel kasvada, jäädes samal ajal kooskõlasse oma väärtuste ja sihtrühmadega.</p>
+</section>
+
+<section id="about" class="about">
+    <div>
+        <h2>Kes me oleme</h2>
+        <p>Design in Balance OÜ on Tallinnas tegutsev ärinõustamis- ja brändiagentuur, mis keskendub ettevõtete strateegilisele kasvule. Me ühendame turunduse, brändingu ja äritoetuse, et luua terviklik lähenemine ettevõtte arengule. Meie eesmärk on aidata klientidel leida oma tugevused, kujundada unikaalne kuvand ning optimeerida äriprotsesse. Iga projekt algab analüüsist ja lõppeb tulemusega, mis toob nähtavat kasu.</p>
+    </div>
+    <img src="https://images.unsplash.com/photo-1524749292158-7540c2494485?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fG9mZmljZSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D" alt="Design team">
+</section>
+
+<section id="services">
+    <h2>Meie Teenused</h2>
+    <div class="services">
+        <div class="service">
+            <h3>Äritoetuse Teenused</h3>
+            <p>Pakkume ettevõtetele praktilist tuge haldus-, planeerimis- ja strateegilistes küsimustes. Meie meeskond aitab optimeerida töövooge ja parandada sisemist efektiivsust.</p>
+        </div>
+        <div class="service">
+            <h3>Turundus ja Kommunikatsioon</h3>
+            <p>Arendame turundusstrateegiaid, mis toovad tulemusi. Meie lahendused põhinevad analüüsil ja loomingulisel lähenemisel, et saavutada maksimaalne nähtavus ja kaasatus.</p>
+        </div>
+        <div class="service">
+            <h3>Brändinõustamine</h3>
+            <p>Aitame ettevõtetel luua ja tugevdada oma brändi identiteeti. Alates nime ja visuaali loomisest kuni strateegilise positsioneerimiseni – ehitame brändi, mis kõnetab ja püsib.</p>
+        </div>
+    </div>
+</section>
+
+<section id="advantages">
+    <h2>Miks valida meid</h2>
+    <div class="advantages">
+        <div class="advantage">
+            <h3>Strateegiline Sügavus</h3>
+            <p>Me ei tee lihtsalt kampaaniaid – me loome suunad, mis toetavad ettevõtte pikaajalist kasvu ja positsioneerimist turul.</p>
+        </div>
+        <div class="advantage">
+            <h3>Kohandatud Lahendused</h3>
+            <p>Iga klient on unikaalne. Meie lahendused kujundatakse vastavalt ettevõtte suurusele, valdkonnale ja eesmärkidele.</p>
+        </div>
+        <div class="advantage">
+            <h3>Läbipaistev Koostöö</h3>
+            <p>Usume ausasse ja avatud suhtlusse. Projekti igas etapis on klient kaasatud ja teadlik tulemustest.</p>
+        </div>
+    </div>
+</section>
+
+<section id="process">
+    <h2>Kuidas Me Töötame</h2>
+    <div class="process">
+        <div class="step">
+            <h3>1. Analüüs ja Suuna Seadmine</h3>
+            <p>Alustame põhjaliku analüüsiga, et mõista teie ettevõtte olemust, eesmärke ja turupositsiooni.</p>
+        </div>
+        <div class="step">
+            <h3>2. Loomine ja Arendus</h3>
+            <p>Loome strateegia, visuaalid ja kommunikatsiooniplaanid, mis toovad teie brändi ellu ja annavad sellele uue jõu.</p>
+        </div>
+        <div class="step">
+            <h3>3. Teostus ja Tulemused</h3>
+            <p>Viime plaanid ellu ja jälgime tulemusi. Optimeerime tegevusi, et tagada pidev areng ja mõõdetav kasu.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <div class="contact-text">
+        <h2>Võta meiega ühendust</h2>
+        <p>Kas oled valmis oma brändi ja ettevõtte järgmisele tasemele viima? Kirjuta meile – loome koos tulevikku, kus tasakaal ja areng käivad käsikäes.</p>
+        <p><strong>E-post:</strong> <a href="mailto:mail@designinbalance.pro" style="color:white;">mail@designinbalance.pro</a><br>
+        <strong>Aadress:</strong> Õismäe tee 48-25, Tallinn 13512</p>
+    </div>
+    <div class="contact-form">
+        <form>
+            <input type="text" placeholder="Teie nimi" required>
+            <input type="email" placeholder="Teie e-post" required>
+            <textarea rows="5" placeholder="Teie sõnum" required></textarea>
+            <button type="submit">Saada</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    © 2025 Design in Balance OÜ – Tasakaal äris ja loovuses
+</footer>
+
+</body>
+</html>
